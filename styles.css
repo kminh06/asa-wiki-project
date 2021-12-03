@@ -2,7 +2,7 @@
 	--font1: 'Poppins', monospace;
 	--translucent-black: rgba(0,0,0,0.2);
 	--sky-blue: #5290C9;
-	--light-sky-blue: #C3E0E5;
+	--light-sky-blue: #A5E2FF;
 	--dark-blue: #1F3559;
 
 }
@@ -74,30 +74,46 @@ a.menu-item:hover, a.menu-item:active {
 	flex-direction: column;
 	justify-content: center;
 	border-width: 0;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .content-section {
 	box-sizing: border-box;
-	width: 100%;
+	width: 96%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: 20px 30px 20px 30px;
+	border-radius: 50px;
 }
 
 .profile {
-	width: 30%;
 	background-color: var(--dark-blue);
 	padding: 30px;
 	box-sizing: border-box;
 	height: 300px;
+	border-radius: 30px;
+	flex-grow: 1;
+	color: white;
 }
 
 .article {
-	width: 70%;
 	background-color: var(--light-sky-blue);
 	padding: 30px;
 	box-sizing: border-box;
+	border-radius: 30px;
+	flex-grow: 3.5;
+}
+
+#preston .profile {
+	margin-left: 30px;
+}
+
+#kminh .profile, #binh-minh .profile {
+	margin-right: 30px;
 }
 
 #content p {
