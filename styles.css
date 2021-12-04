@@ -20,12 +20,13 @@ body {
 
 header {
 	background-color: var(--light-sky-blue);
-	margin-top: -30px;
 	padding: 15px;
 	font-family: 'Arvo';
 	border-bottom: 5px var(--sky-blue) solid;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	height: 100px;
 }
 
 #menu-bar {
@@ -57,6 +58,7 @@ span#search-bar {
 	border-radius: 50px;
 	height: 40px;
 	min-width: 230px;
+	width: auto;
 	background-color: var(--translucent-black);
 	border: 0;
 	color:rgba(0, 0, 0, 0.9);
@@ -65,21 +67,32 @@ span#search-bar {
 	margin-top: auto;
 	margin-bottom: auto;
 	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+img#search-icon {
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin: 10px;
+	opacity: 0.75;
 }
 
 input#search-input {
-	float: right;
 	border-radius: 50px;
 	height: 40px;
 	min-width: 200px;
-	background-color: var(--translucent-black);
+	background-color: rgba(0, 0, 0, 0);
 	border: 0;
 	padding: 10px;
 	color:rgba(0, 0, 0, 0.9);
 	position: absolute;
-	right: 30;
+	right: 0;
+	top: 0;
 	margin-top: auto;
 	margin-bottom: auto;
+	font-size: 14px;
 }
 
 input#search-input:focus {
@@ -93,12 +106,14 @@ input#search-input::placeholder {
 
 #header-column {
 	margin: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 #title {
 	text-align: center;
 	font-size: 30px;
-	margin-top: 30px;
+	margin-bottom: 15px;
 }
 
 #introduction {
@@ -173,7 +188,7 @@ input#search-input::placeholder {
 	margin-right: 30px;
 }
 
-#content p {
+p {
 	font-size: 16px;
 }
 
