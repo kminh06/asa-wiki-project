@@ -4,7 +4,7 @@
 	--sky-blue: #5290C9;
 	--light-sky-blue: #A5E2FF;
 	--dark-blue: #1F3559;
-
+	--smoky-white: #E8EEF1;
 }
 
 html {
@@ -24,6 +24,8 @@ header {
 	padding: 15px;
 	font-family: 'Arvo';
 	border-bottom: 5px var(--sky-blue) solid;
+	display: flex;
+	align-items: center;
 }
 
 #menu-bar {
@@ -51,6 +53,48 @@ a.menu-item:hover, a.menu-item:active {
 	-webkit-transition: all .4s ease;
 }
 
+span#search-bar {
+	border-radius: 50px;
+	height: 40px;
+	min-width: 230px;
+	background-color: var(--translucent-black);
+	border: 0;
+	color:rgba(0, 0, 0, 0.9);
+	position: absolute;
+	right: 30;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: flex;
+}
+
+input#search-input {
+	float: right;
+	border-radius: 50px;
+	height: 40px;
+	min-width: 200px;
+	background-color: var(--translucent-black);
+	border: 0;
+	padding: 10px;
+	color:rgba(0, 0, 0, 0.9);
+	position: absolute;
+	right: 30;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+input#search-input:focus {
+	border: 0;
+	outline: none !important;
+}
+
+input#search-input::placeholder {
+	color: rgba(0, 0, 0, 0.75);
+}
+
+#header-column {
+	margin: auto;
+}
+
 #title {
 	text-align: center;
 	font-size: 30px;
@@ -59,6 +103,7 @@ a.menu-item:hover, a.menu-item:active {
 
 #introduction {
 	padding: 10px;
+	background-color: var(--smoky-white);
 }
 
 #description {
@@ -69,19 +114,18 @@ a.menu-item:hover, a.menu-item:active {
 #content-area {
 	box-sizing: border-box;
 	height: auto;
-	background-color: lightsteelblue;
+	background-color: var(--smoky-white);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	border-width: 0;
 	align-items: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 15px 30px 15px 30px;
 }
 
 .content-section {
 	box-sizing: border-box;
-	width: 96%;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -95,8 +139,9 @@ a.menu-item:hover, a.menu-item:active {
 	padding: 30px;
 	box-sizing: border-box;
 	height: 300px;
-	border-radius: 30px;
 	flex-grow: 1;
+	min-width: 200px;
+	max-width: 400px;
 	color: white;
 }
 
@@ -104,8 +149,20 @@ a.menu-item:hover, a.menu-item:active {
 	background-color: var(--light-sky-blue);
 	padding: 30px;
 	box-sizing: border-box;
-	border-radius: 30px;
 	flex-grow: 3.5;
+}
+
+.profile, .article {
+	border-radius: 25px;
+	position: relative;
+    top: 0;
+  	transition: top ease 0.8s, box-shadow ease 0.8s;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.profile:hover, .article:hover {
+	top: -10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #preston .profile {
