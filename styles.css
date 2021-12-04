@@ -62,7 +62,7 @@ span#search-bar {
 	width: auto;
 	background-color: var(--translucent-black);
 	border: 0;
-	color:rgba(0, 0, 0, 0.9);
+	color:rgba(0, 0, 0, 0.6);
 	position: absolute;
 	right: 30;
 	margin-top: auto;
@@ -77,17 +77,16 @@ img#search-icon {
 	width: 20px;
 	float: left;
 	margin: 10px;
-	opacity: 0.75;
+	opacity: 0.6;
 }
 
 input#search-input {
-	border-radius: 50px;
 	height: 40px;
 	min-width: 200px;
 	background-color: rgba(0, 0, 0, 0);
 	border: 0;
 	padding: 10px;
-	color:rgba(0, 0, 0, 0.9);
+	color:rgba(0, 0, 0, 0.75);
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -102,7 +101,7 @@ input#search-input:focus {
 }
 
 input#search-input::placeholder {
-	color: rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 #header-column {
@@ -156,16 +155,30 @@ input#search-input::placeholder {
 	box-sizing: border-box;
 	height: 300px;
 	flex-grow: 1;
+	flex-shrink: 4;
 	min-width: 200px;
-	max-width: 400px;
+	max-width: 300px;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pfp {
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	justify-self: center;
+	margin: auto;
 }
 
 .article {
 	background-color: var(--light-sky-blue);
 	padding: 30px;
 	box-sizing: border-box;
-	flex-grow: 3.5;
+	flex-grow: 4;
+	flex-shrink: 1;
 }
 
 .profile, .article {
@@ -319,7 +332,6 @@ input[type="radio"] {
 	transition: all .4s ease;
 	-webkit-transition: all .4s ease;
 }
-
 	  
 ::-webkit-scrollbar {
   width: 6px;
@@ -327,15 +339,21 @@ input[type="radio"] {
 }
 ::-webkit-scrollbar-track {
   border-radius: 25px;
-  background: rgba(0,0,0,0.1);
+  background: var(--smoky-white);
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 25px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.4);
 }
 e::-webkit-scrollbar-thumb:hover{
 	background: rgba(0,0,0,0.4);
 }
 ::-webkit-scrollbar-thumb:active{
-	background: rgba(0,0,0,.9);
+	background: rgba(0,0,0,.75);
+}
+
+@media only screen and (max-width: 800px) {
+	span#search-bar {
+		visibility: hidden;
+	}
 }
