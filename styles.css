@@ -242,6 +242,7 @@ footer {
 	background-color: var(--light-sky-blue);
 	padding-bottom: 5px;
 	border-top: 5px var(--sky-blue) solid;
+	display: flex;
 }
 
 #survey-form {
@@ -364,24 +365,19 @@ input[type="radio"] {
 	-webkit-transition: all .4s ease;
 }
 
-#footer-side {
-    float:right;
-    padding: 15px;
-    margin: 15px;
-    width:350px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#contact-info {
+    float: right;
+    width: auto;
+	height: fit-content;
     font-family: var(--font1);
+	position: relative;
+	bottom: 0;
 }
 
-#instagram{
+.social-icons {
     width: 30px;
-    filter: grayscale(50%);
-}
-
-#footer-content {
-    float:right;
+    filter: grayscale(100%);
+	margin-top: 25px;
 }
 	  
 ::-webkit-scrollbar {
