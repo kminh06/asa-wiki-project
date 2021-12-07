@@ -363,6 +363,26 @@ input[type="radio"] {
 	transition: all .4s ease;
 	-webkit-transition: all .4s ease;
 }
+
+#footer-side {
+    float:right;
+    padding: 15px;
+    margin: 15px;
+    width:350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: var(--font1);
+}
+
+#instagram{
+    width: 30px;
+    filter: grayscale(50%);
+}
+
+#footer-content {
+    float:right;
+}
 	  
 ::-webkit-scrollbar {
   width: 6px;
