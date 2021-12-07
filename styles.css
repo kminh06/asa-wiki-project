@@ -240,14 +240,15 @@ p {
 footer {
 	font-size: 16px;
 	background-color: var(--light-sky-blue);
-	padding-bottom: 5px;
+	padding: 15px 15px 5px 15px;
 	border-top: 5px var(--sky-blue) solid;
 	display: flex;
+	position: relative;
+	align-items: center;
 }
 
 #survey-form {
     padding: 15px;
-    margin: 15px;
 }
 
 #name-input {
@@ -366,18 +367,29 @@ input[type="radio"] {
 }
 
 #contact-info {
-    float: right;
+    justify-self: right;
     width: auto;
-	height: fit-content;
+	height: auto;
     font-family: var(--font1);
-	position: relative;
-	bottom: 0;
+	padding: 15px;
+	position: absolute;
+	right: 15;
+	bottom: 15;
+}
+
+#contact-container {
+	margin-top: 125px;
+}
+
+#social-bar {
+	margin-top: 20px;
+	margin-left: -3px;
 }
 
 .social-icons {
     width: 30px;
     filter: grayscale(100%);
-	margin-top: 25px;
+	opacity: 0.6;
 }
 	  
 ::-webkit-scrollbar {
