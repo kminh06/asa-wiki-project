@@ -369,10 +369,10 @@ input[type="radio"] {
 #contact-info {
     justify-self: right;
     width: auto;
-	height: auto;
+	height: fit-content;
     font-family: var(--font1);
 	padding: 15px;
-	position: absolute;
+	position: relative;
 	right: 15;
 	bottom: 15;
 }
@@ -390,6 +390,10 @@ input[type="radio"] {
     width: 30px;
     filter: grayscale(100%);
 	opacity: 0.6;
+}
+
+#contact-container a:link, #contact-container a:hover, #contact-container a:visited, #contact-container a:active {
+	color: black;
 }
 	  
 ::-webkit-scrollbar {
