@@ -397,7 +397,7 @@ input[type="radio"] {
 	opacity: 0.6;
 }
 
-#contact-container a:link, #contact-container a:hover, #contact-container a:visited, #contact-container a:active {
+a:link, a:hover, a:visited, a:active {
 	color: black;
 }
 	  
@@ -435,4 +435,19 @@ input[type="radio"] {
 	.article {
 		margin-bottom: 40px;
 	}
+}
+
+#form-page-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: var(--smoky-white);
+}
+
+#form-page-paragraph {
+	margin: auto;
+	width: max-content;
+	position: relative;
+	top: -20; 
 }
