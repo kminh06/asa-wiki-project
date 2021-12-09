@@ -10,7 +10,4 @@ function navigate() {
     else if (x.toLowerCase() === "binh minh") {
         document.getElementById('binh-minh').scrollIntoView();
     }
-    else {
-        alert("Invalid search input!")
-    }
-}
+};
