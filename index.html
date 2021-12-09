@@ -11,12 +11,16 @@
 </head>
 <body>
 	<header>
+		<div id="authors-info" class="sideNav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<span id="header-column">
 			<h1 id="title">Coding Club Project</h1>
 			<nav id="menu-bar">
-				<a href="#kminh" class='menu-item'>KMinh</a>
-				<a href="#preston" class='menu-item'>Preston</a>
-				<a href="#binh-minh" class='menu-item'>Binh Minh</a>
+				<a href="#kminh" class='menu-item'>To-Do App</a>
+				<a href="#preston" class='menu-item'>Music Player</a>
+				<a href="#binh-minh" class='menu-item'>Wikipedia 2.0</a>
 			</nav>
 		</span>
 		<span id="search-bar">
@@ -24,6 +28,15 @@
 			<input type="search" placeholder="Search" id="search-input" onchange="navigate()">
 			<script src="search.js"></script>
 		<span>
+		<script>
+			function openNav() {
+			  document.getElementById("authors-info").style.width = "100%";
+			}
+			
+			function closeNav() {
+			  document.getElementById("authors-info").style.width = "0";
+			}
+		</script>
 	</header>
     <div id="content-area">
 		<div id="introduction">
