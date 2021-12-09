@@ -93,6 +93,7 @@ input#search-input {
 	margin-top: auto;
 	margin-bottom: auto;
 	font-size: 14px;
+	font-family: var(--font1);
 }
 
 input#search-input:focus {
@@ -102,6 +103,10 @@ input#search-input:focus {
 
 input#search-input::placeholder {
 	color: rgba(0, 0, 0, 0.6);
+}
+
+#search-input::-webkit-search-cancel-button{
+    display: none;   
 }
 
 #header-column {
