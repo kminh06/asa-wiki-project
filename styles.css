@@ -213,24 +213,25 @@ input#search-input::placeholder {
 }
 
 #content-area {
+	padding: 15px 30px 15px 30px;
 	box-sizing: border-box;
 	height: auto;
 	background-color: var(--smoky-white);
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
 	border-width: 0;
 	align-items: center;
-	padding: 15px 30px 15px 30px;
+	
 }
 
 .content-section {
 	box-sizing: border-box;
-	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-grow: 3;
 	margin: 20px 30px 20px 30px;
 	border-radius: 50px;
 	position: relative;
@@ -297,6 +298,16 @@ input#search-input::placeholder {
 	flex-grow: 4;
 	flex-shrink: 1;
 	min-height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#kminh article {
+	width: 100%;
+	font-size: 20px;
+	display: inline-block;
+	flex-grow: 3;
 }
 
 .profile, .article {
