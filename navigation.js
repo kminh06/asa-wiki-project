@@ -1,6 +1,5 @@
 function navigate() {
     var x = document.getElementById("search-input").value;
-
     if (x.toLowerCase() === "kminh") {
         document.getElementById('kminh').scrollIntoView();
     }
