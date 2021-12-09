@@ -556,3 +556,43 @@ a:hover {
 	position: relative;
 	top: -20; 
 }
+
+#BinhMinh-stuff {
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.paragraph {
+	display: block;
+}
+
+.picture {
+	width: 300px;
+	padding: 10px;
+	float: right;
+}
+
+.boring-side-title {
+	display: table;
+	width: 100%;
+}
+
+.boring-side {
+	float: left;
+	display: inline-block;
+	width: 70%;
+}
+
+.picture-side {
+	float: right;
+	display: inline-block;
+	width: 20%;
+}
