@@ -1,0 +1,3 @@
+# Our first static website project
+
+Found this old relic from 2 years ago. Decided to revive it. Now it lives on, forever ...
